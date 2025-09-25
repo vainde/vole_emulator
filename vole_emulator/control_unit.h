@@ -2,8 +2,10 @@
 #define control_unit_h
 #include "instruction_set.h"
 
+struct instruction_set;
+
 struct control_unit {
-	struct instruction_set IS;
+	instruction_set* IS;
 };
 
 #endif
