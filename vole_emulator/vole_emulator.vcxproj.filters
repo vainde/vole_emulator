@@ -30,6 +30,9 @@
     <ClInclude Include="instruction_set.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="machine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="register.cpp">

@@ -6,6 +6,9 @@
 #include <stdbool.h>
 
 // represents the memory of the machine
-extern uint8_t cell[MAX_ADDRESS];
-bool valid_address(uint8_t address);
+struct cell {
+	uint8_t cells[MAX_ADDRESS];
+	bool valid_address(uint8_t address) const;
+};
+
 #endif

@@ -4,7 +4,7 @@
 #include "control_unit.h"
 
 struct cpu {
-	registers registers;
+	_register registers;
 	control_unit CU;
 };
 

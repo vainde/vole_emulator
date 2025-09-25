@@ -7,9 +7,9 @@
 
 
 // vole has 16 8-bit general purpose registers
-struct registers {
+struct _register {
 	uint8_t registers[MAX_REGISTER];
-	bool valid_register(uint8_t register_number);
+	bool valid_register(uint8_t register_number) const;
 };
 
 #endif

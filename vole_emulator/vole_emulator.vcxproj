@@ -131,6 +131,7 @@
     <ClInclude Include="control_unit.h" />
     <ClInclude Include="cpu.h" />
     <ClInclude Include="instruction_set.h" />
+    <ClInclude Include="machine.h" />
     <ClInclude Include="register.h" />
   </ItemGroup>
   <ItemGroup>

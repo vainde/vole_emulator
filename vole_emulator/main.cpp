@@ -1,10 +1,10 @@
-#include "cpu.h"
+#include "machine.h"
 
 int main() {
 	uint8_t register_number = 0x4;
 	uint8_t address = 0xA3;
+	machine vole = {};
 
-	cpu vole_cpu = {};
-	vole_cpu.CU.IS.load(vole_cpu.registers, register_number, address);
+	vole.CPU.CU.IS.load(vole, register_number, address);
 	return 0;
 }
