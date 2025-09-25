@@ -5,6 +5,6 @@ int main() {
 	uint8_t address = 0xA3;
 
 	cpu vole_cpu = {};
-	vole_cpu.CU.load(vole_cpu.registers, register_number, address);
+	vole_cpu.CU.IS.load(vole_cpu.registers, register_number, address);
 	return 0;
 }

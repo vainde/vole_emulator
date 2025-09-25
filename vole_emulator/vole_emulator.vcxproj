@@ -130,14 +130,14 @@
     <ClInclude Include="cell.h" />
     <ClInclude Include="control_unit.h" />
     <ClInclude Include="cpu.h" />
-    <ClInclude Include="instruction.h" />
+    <ClInclude Include="instruction_set.h" />
     <ClInclude Include="register.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="cell.c" />
-    <ClCompile Include="control_unit.c" />
-    <ClCompile Include="main.c" />
-    <ClCompile Include="register.c" />
+    <ClCompile Include="cell.cpp" />
+    <ClCompile Include="instruction_set.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="register.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -24,24 +24,24 @@
     <ClInclude Include="control_unit.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="instruction.h">
+    <ClInclude Include="register.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="register.h">
+    <ClInclude Include="instruction_set.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="register.c">
+    <ClCompile Include="register.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="cell.c">
+    <ClCompile Include="cell.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="main.c">
+    <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="control_unit.c">
+    <ClCompile Include="instruction_set.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
