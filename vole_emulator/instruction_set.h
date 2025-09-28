@@ -19,6 +19,10 @@ struct instruction_set {
 
 	// 0x4: Move the bit pattern found in register R to S
 	void move_0x4(struct machine* m, uint8_t register_1, uint8_t register2);
+
+	/* 0x5: ADD the bit patterns in registers S and T 
+	 as though they were two’s complement representations and leave the result in register R. */
+	void add_0x5(struct machine* m, uint8_t register_1, uint8_t register_2, uint8_t register_3);
 };
 
 #endif
