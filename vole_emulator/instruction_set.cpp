@@ -41,5 +41,7 @@ void instruction_set::move_0x4(struct machine* m, uint8_t register_1, uint8_t re
 void instruction_set::add_0x5(struct machine* m, uint8_t register_1, uint8_t register_2, uint8_t register_3) {
 	uint8_t val_1 = m->CPU.registers.registers[register_2];
 	uint8_t val_2 = m->CPU.registers.registers[register_3];
-	m->CPU.registers.registers[register_1] = val_1 + val_2;
+
+	//two's complement
+	m->CPU.registers.registers[register_1] = (~val_1 + 1) + (~val_2 + 1);
 }
