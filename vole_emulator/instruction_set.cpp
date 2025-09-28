@@ -35,5 +35,14 @@ void instruction_set::store_0x3(struct machine* m, uint8_t register_number, uint
 		std::cout << "Contents of register " << std::hex << (int)register_number;
 		std::cout << " stored in memory cell " << std::hex << (int)address;
 	}
+}
 
+void instruction_set::move_0x4(struct machine* m, uint8_t register_1, uint8_t register_2) {
+	bool use_register1 = m->CPU.registers.valid_register(register_1);
+	bool use_register2 = m->CPU.registers.valid_register(register_2);
+
+	if (use_register1 && use_register2) {
+		uint8_t register_1_content = m->CPU.registers.registers[register_1];
+		m->CPU.registers.registers[register_2] = register_1_content;
+	}
 }

@@ -16,6 +16,9 @@ struct instruction_set {
 
 	// 0x3: Store the bit pattern found in register R in the memory cell of address XY
 	void store_0x3(struct machine* m, uint8_t register_number, uint8_t address);
+
+	// 0x4: Move the bit pattern found in register R to S
+	void move_0x4(struct machine* m, uint8_t register_1, uint8_t register2);
 };
 
 #endif
