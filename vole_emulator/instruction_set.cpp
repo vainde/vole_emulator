@@ -45,3 +45,17 @@ void instruction_set::add_0x5(struct machine* m, uint8_t register_1, uint8_t reg
 	//two's complement
 	m->CPU.registers.registers[register_1] = (~val_1 + 1) + (~val_2 + 1);
 }
+
+void instruction_set::or_0x7(struct machine* m, uint8_t register_1, uint8_t register_2, uint8_t register_3) {
+	bool use_register1 = m->CPU.registers.valid_register(register_1);
+	bool use_register2 = m->CPU.registers.valid_register(register_2);
+	bool use_register3 = m->CPU.registers.valid_register(register_3);
+
+	if (use_register1 && use_register2 && use_register3) {
+		uint8_t val_1 = m->CPU.registers.registers[register_2];
+		uint8_t val_2 = m->CPU.registers.registers[register_3];
+
+		uint8_t result = val_1 | val_2;
+		m->CPU.registers.registers[register_1] = result;
+	}
+}

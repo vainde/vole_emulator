@@ -23,6 +23,9 @@ struct instruction_set {
 	/* 0x5: ADD the bit patterns in registers S and T 
 	 as though they were two’s complement representations and leave the result in register R. */
 	void add_0x5(struct machine* m, uint8_t register_1, uint8_t register_2, uint8_t register_3);
+
+	//0x7: OR the bit patterns in registers S and T and place the result in register R
+	void or_0x7(struct machine*m, uint8_t register_1, uint8_t register_2, uint8_t register_3);
 };
 
 #endif
